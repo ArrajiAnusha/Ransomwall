@@ -1,140 +1,47 @@
-RansomWall is a layered security system designed to detect and prevent cryptographic ransomware attacks using machine learning techniques. The system analyzes program behavior using both static and dynamic analysis to identify malicious activities such as unauthorized file encryption, suspicious registry changes, and abnormal file system operations.
+RansomWall is a security system designed to detect and prevent cryptographic ransomware attacks using machine learning techniques. It monitors system behavior and file activities to identify suspicious processes that try to encrypt user files. The system also creates a backup of files to protect user data during detection.
+___________________________________________________________________________________________________________________________________________________________________
+Features
 
-It also includes a trap-based detection mechanism and automatic backup system to protect user files during the detection process.
+Layered defense architecture
 
-Key Features
+Static and Dynamic malware analysis
 
-Layered ransomware detection architecture
+Machine Learning based ransomware detection
 
-Hybrid approach using Static and Dynamic Analysis
+Honey files for early threat detection
 
-Machine Learning based classification for ransomware detection
+Real-time monitoring of file operations
 
-Honey Files and Trap Layer for early detection
+Automatic file backup and recovery
+___________________________________________________________________________________________________________________________________________________________________
 
-Real-time monitoring of file system activities
+How It Works
 
-Automatic file backup and recovery mechanism
+RansomWall uses multiple layers to detect ransomware:
 
-Capable of detecting zero-day ransomware attacks
+Static Analysis – Examines executable files for suspicious patterns.
 
-System Architecture
+Trap Layer – Uses honey files to detect unauthorized file modifications.
 
-RansomWall consists of multiple layers that work together to detect ransomware behavior:
+Dynamic Analysis – Monitors runtime file activities such as read, write, rename, and delete operations.
 
-Static Analysis Engine
+Backup Layer – Saves files modified by suspicious processes.
 
-Analyzes executable files before execution.
-
-Detects suspicious strings, packers, and digital signatures.
-
-Honey Files & Trap Layer
-
-Deploys trap files and directories.
-
-Detects unauthorized modifications by ransomware.
-
-Dynamic Analysis Engine
-
-Monitors runtime behavior such as:
-
-File read/write operations
-
-Directory listing
-
-File renaming
-
-File deletion
-
-Entropy changes during encryption.
-
-File Backup Layer
-
-Creates backups of files modified by suspicious processes.
-
-Restores files if ransomware is detected.
-
-Machine Learning Engine
-
-Classifies processes as Ransomware or Benign.
-
-Uses supervised learning algorithms.
-
-Machine Learning Algorithms Used
-
-The system evaluates several supervised learning algorithms:
-
-Logistic Regression
-
-Support Vector Machine (SVM)
-
-Artificial Neural Networks
-
-Random Forest
-
-Gradient Tree Boosting
-
-The Gradient Tree Boosting algorithm achieved the best results with 98.25% detection accuracy.
-
-Dataset
-
-The system was evaluated using:
-
-574 ransomware samples from 12 ransomware families
-
-442 benign software samples
-
-Ransomware families include:
-
-CryptoWall
-
-TeslaCrypt
-
-Cerber
-
-CTB-Locker
-
-Locky
-
-Jigsaw
-
-CryptoLocker
-
-TorrentLocker
-
-CryptoDefense
-
-Hidden Tear
-
-CryptoFortress
-
-CrypVault
+Machine Learning Engine – Classifies processes as ransomware or benign.
+___________________________________________________________________________________________________________________________________________________________________
 
 Technologies Used
 
-C Programming Language
+C Programming
 
 Machine Learning (Scikit-learn)
 
-Windows Driver Development Kit (WDK)
+Windows Driver Kit (WDK)
 
 Microsoft Visual Studio
 
-Cuckoo Sandbox (for malware analysis)
-
-Development Tools
-
-Visual Studio 2015
-
-Windows SDK 10
-
-Windows Driver Kit 10
-
-WinDbg (Kernel Debugging)
-
-Process Explorer
-
-Debug View
+Cuckoo Sandbox
+___________________________________________________________________________________________________________________________________________________________________
 
 Results
 
@@ -142,14 +49,6 @@ Detection Accuracy: 98.25%
 
 Near zero false positives
 
-Successfully detected zero-day ransomware samples
+Successfully detects zero-day ransomware attacks
 
-Future Improvements
-
-Integration with cloud-based threat intelligence
-
-Support for multiple operating systems
-
-Real-time enterprise network deployment
-
-Deep learning based ransomware detection
+If you want, I can also give you a much better GitHub README (with badges, icons, and sections) that makes your profile look more professional for recruiters.
