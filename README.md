@@ -20,7 +20,8 @@ The system continuously monitors file system activities and identifies suspiciou
 
 The following diagram illustrates the layered architecture of the RansomWall defense system.
 
-![System Architecture](screenshots/architecture.png)
+<img width="448" height="347" alt="argitech" src="https://github.com/user-attachments/assets/44f3f179-1f81-49cb-84a4-dd41acff3a32" />
+
 
 ---
 
@@ -67,7 +68,6 @@ RansomWall
 
 ---
 
-## Screenshots
 
 ### Architecture Diagram
 
