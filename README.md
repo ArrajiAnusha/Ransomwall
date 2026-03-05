@@ -30,19 +30,6 @@ Backup Layer – Saves files modified by suspicious processes.
 Machine Learning Engine – Classifies processes as ransomware or benign.
 ___________________________________________________________________________________________________________________________________________________________________
 
-Technologies Used
-
-C Programming
-
-Machine Learning (Scikit-learn)
-
-Windows Driver Kit (WDK)
-
-Microsoft Visual Studio
-
-Cuckoo Sandbox
-___________________________________________________________________________________________________________________________________________________________________
-
 Results
 
 Detection Accuracy: 98.25%
